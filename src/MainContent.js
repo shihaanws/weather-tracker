@@ -182,8 +182,17 @@ function MainContent() {
         windSpeedMiles: kmhToMph(cityWindSpeed).toFixed(2) + "miles/h",
       };
 
-      setAddedCities([...addedCities, cityInfo]);
-      console.log("addedCities", addedCities);
+      //   setAddedCities([...addedCities, cityInfo]);
+
+      let cities = [...addedCities, cityInfo];
+      const uniqueCities = Array.from(
+        new Set(cities.map((obj) => obj.name))
+      ).map((name) => {
+        return cities.find((obj) => obj.name === name);
+      });
+      setAddedCities(uniqueCities);
+
+      console.log("addedCities", [...addedCities, cityInfo]);
 
       // setSuggestions(data.results);
     } catch (error) {
