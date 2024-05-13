@@ -9,7 +9,6 @@ function App() {
     <div className="App bg-[#f5f5f5] flex flex-col w-full	">
       <Header />
       <MainContent />
-      // <Footer />
     </div>
   );
 }
