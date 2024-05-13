@@ -390,7 +390,6 @@ function MainContent() {
               option.latitude,
               option.longitude
             );
-            console.log("val", value, option);
           }}
           placeholder="Search for Cities"
         />
