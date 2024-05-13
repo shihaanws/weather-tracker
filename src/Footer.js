@@ -1,16 +1,17 @@
 import { Typography } from "antd";
 import React from "react";
 
-const { Text } = Typography;
 
 function Footer() {
   return (
     <div>
-      <footer class="bg-white h-10 mt-12 mb-0 flex items-center text-center justify-center rounded-lg  dark:bg-gray-900 ">
-        <Text class=" text-sm space-grotesk-title text-gray-500 sm:text-center dark:text-gray-400">
-          Made with ❤️ by Shihaan
-        </Text>
-      </footer>
+      <div class="fixed left-0 bottom-0 w-full dark:bg-gray-900 text-white text-center">
+        <div class="w-full max-w-screen-xl mx-auto p-0 md:py-4">
+          <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">
+            Made with ❤️ by Shihaan
+          </span>
+        </div>
+      </div>
     </div>
   );
 }
